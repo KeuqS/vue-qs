@@ -96,9 +96,17 @@ export default defineConfig({
       link: '/zh/',
       themeConfig: {
         nav: [
-          { text: '指南', link: '/guide/getting-started' },
+          { text: '指南', link: '/zh/guide/getting-started' },
           { text: 'API', link: '/zh/api/' },
         ],
+        sidebar: {
+          '/zh/guide/': [
+            {
+              text: '指南',
+              items: [{ text: '快速开始', link: '/zh/guide/getting-started' }],
+            },
+          ],
+        },
       },
     },
   },
